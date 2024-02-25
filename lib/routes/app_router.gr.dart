@@ -7,39 +7,42 @@
 // ignore_for_file: type=lint
 // coverage:ignore-file
 
-part of 'app_router.dart';
+// ignore_for_file: no_leading_underscores_for_library_prefixes
+import 'package:auto_route/auto_route.dart' as _i4;
+import 'package:auto_route_implement/screen/screen_a.dart' as _i1;
+import 'package:auto_route_implement/screen/screen_b.dart' as _i2;
+import 'package:auto_route_implement/screen/screen_c.dart' as _i3;
 
-abstract class _$AppRouter extends RootStackRouter {
-  // ignore: unused_element
-  _$AppRouter({super.navigatorKey});
+abstract class $AppRouter extends _i4.RootStackRouter {
+  $AppRouter({super.navigatorKey});
 
   @override
-  final Map<String, PageFactory> pagesMap = {
+  final Map<String, _i4.PageFactory> pagesMap = {
     RouteA.name: (routeData) {
-      return AutoRoutePage<dynamic>(
+      return _i4.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const ScreenA(),
+        child: const _i1.ScreenA(),
       );
     },
     RouteB.name: (routeData) {
-      return AutoRoutePage<dynamic>(
+      return _i4.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const ScreenB(),
+        child: const _i2.ScreenB(),
       );
     },
     RouteC.name: (routeData) {
-      return AutoRoutePage<dynamic>(
+      return _i4.AutoRoutePage<dynamic>(
         routeData: routeData,
-        child: const ScreenC(),
+        child: const _i3.ScreenC(),
       );
     },
   };
 }
 
 /// generated route for
-/// [ScreenA]
-class RouteA extends PageRouteInfo<void> {
-  const RouteA({List<PageRouteInfo>? children})
+/// [_i1.ScreenA]
+class RouteA extends _i4.PageRouteInfo<void> {
+  const RouteA({List<_i4.PageRouteInfo>? children})
       : super(
           RouteA.name,
           initialChildren: children,
@@ -47,13 +50,13 @@ class RouteA extends PageRouteInfo<void> {
 
   static const String name = 'RouteA';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static const _i4.PageInfo<void> page = _i4.PageInfo<void>(name);
 }
 
 /// generated route for
-/// [ScreenB]
-class RouteB extends PageRouteInfo<void> {
-  const RouteB({List<PageRouteInfo>? children})
+/// [_i2.ScreenB]
+class RouteB extends _i4.PageRouteInfo<void> {
+  const RouteB({List<_i4.PageRouteInfo>? children})
       : super(
           RouteB.name,
           initialChildren: children,
@@ -61,13 +64,13 @@ class RouteB extends PageRouteInfo<void> {
 
   static const String name = 'RouteB';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static const _i4.PageInfo<void> page = _i4.PageInfo<void>(name);
 }
 
 /// generated route for
-/// [ScreenC]
-class RouteC extends PageRouteInfo<void> {
-  const RouteC({List<PageRouteInfo>? children})
+/// [_i3.ScreenC]
+class RouteC extends _i4.PageRouteInfo<void> {
+  const RouteC({List<_i4.PageRouteInfo>? children})
       : super(
           RouteC.name,
           initialChildren: children,
@@ -75,5 +78,5 @@ class RouteC extends PageRouteInfo<void> {
 
   static const String name = 'RouteC';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static const _i4.PageInfo<void> page = _i4.PageInfo<void>(name);
 }
